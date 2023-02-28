@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Base-->
+    <!-- <base href="https://www.cgvakindia.com/" target="_blank"> -->
+    <title>BASIC HTML TAGS</title>
+</head>
+
+<body>
+    <!--base example-->
+    <!-- <a href="company/#overview">Overview</a><br>
+    <a href="blog/">Blog</a><br>
+    <a href="company/#management">Management</a><br> -->
+    <!--H1 TO H6-->
+    <h1>h1 tag</h1>
+    <h6>h6 tag</h6>
+    <!--Paragraph-->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero modi beatae rem, ea totam quam culpa sit sequi
+        <br> porro ducimus dignissimos in facilis perspiciatis ab quasi minima harum. Accusantium, voluptates?
+    </p>
+    <hr>
+    <!--Pre tag-->
+    <pre>
+        <i>Hello   </i>Hi
+        How are you?
+    </pre>
+    <!--Formatting elements-->
+    <p><b>Bold</b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facilis expedita aliquam tempore
+        blanditiis
+        harum, amet, nostrum adipisci ad eveniet cupiditate dolor nobis dicta libero maxime ea soluta consectetur! Nisi!
+    </p>
+    <br>
+    <mark>x<sup>2</sup>
+        x<sub>2</sub></mark>
+    <!--Link-->
+    <br>
+    <a href="https://www.google.co.in/webhp?source=search_app" target="_blank">Google</a>
+    <!--Image tag-->
+    <img src="/assets/IMG1.jpg" alt="HTML" height="100px" width="100px">
+    <hr>
+    <!--Table Demo 1-->
+    <table border="1">
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Testing Engineer</td>
+            </tr>
+            <tr>
+                <td>Rita</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Web Designer</td>
+                <td>20000</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Peter</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Jancy</td>
+                <td>Web Designer</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Software Engineer</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <!--Table Demo 2-->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Mobile No.</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>7503520801</td>
+            <td>9555879135</td>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>7503520801</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>7503520801</td>
+            <td>9555879135</td>
+        </tr>
+    </table>
+    <hr>
+    <!--Table Demo 3-->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>Sam</td>
+            <td>John</td>
+            <td>Jancy</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Mobile No.</th>
+
+            <td>7503520801</td>
+            <td>7503520801</td>
+        </tr>
+        <tr>
+            <td>9555879135</td>
+            <td>7503520801</td>
+            <td>7503520801</td>
+        </tr>
+    </table>
+    <hr>
+    <!--Table Demo 4-->
+    <h2>Example of Colgroup Tag</h2>
+    <table border="1">
+        <colgroup>
+            <col style="background-color: green" width="40">
+            <col span="2" style="background-color:   #ff7256" width="80">
+        </colgroup>
+        <tr>
+            <th>Sr.No</th>
+            <th>Course</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Html</td>
+            <td>3 days</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>5 days</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SQL</td>
+            <td>15 days</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>MySQL</td>
+            <td>15 days</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Oracle</td>
+            <td>15 days</td>
+        </tr>
+    </table>
+    <hr>
+    <!--LIST DEMO-->
+    <!--LISTS-->
+    <!--ordered,unordered,definition list-->
+    <ol type="i" start="3">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <LI>jQuery</LI>
+    </ol>
+    <br>
+    <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <ol>
+        <ul>
+            <li><a href="assets/IMG1.jpg">HTML</a></li>
+        </ul>
+        <ul>
+            <li><a href="assets/img2.jpg">CSS</a></li>
+        </ul>
+    </ol>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+    <!--Audio tag-->
+    <hr>
+    <audio controls autoplay muted>
+        <source src="assets/SampleAudio.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <hr>
+    <!--video tag-->
+    <video width="400px" controls poster="assets/IMG1.jpg">
+        <source src="assets/SampleVideo.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <!--iframes-->
+    <!--embed another document in the current document-iframes-->
+    <iframe src="YoutubeVideo.html" height="400px" width="600px"></iframe>
+    <br>
+    <iframe src="https://www.cgvakindia.com/" height="400px" width="400px"></iframe>
+    <br>
+    <iframe src="YoutubeVideo.html" height="400px" width="400px" name="google"></iframe>
+    <br>
+    <a href="https://www.google.com/webhp?igu=1" target="google" title="Google Search engine">Google</a>
+    <br>
+    <iframe width="609" height="342" src="https://www.youtube.com/embed/Kq2FCNTQmSI"
+        title="Pasta Song | CoComelon Nursery Rhymes & Kids Songs" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <hr>
+    <!--figure and figcaption Demo-->
+    <figure>
+        <img src="/assets/IMG1.jpg" alt="HTML" style="width:20%">
+        <figcaption>Fig.1 - HTML.</figcaption>
+    </figure>
+    <hr>
+    <!--Picture element-->
+    <picture>
+        <source media="(min-width:650px)" srcset="/assets/IMG1.jpg" height="100px" width="100px">
+        <source media="(min-width:465px)" srcset="/assets/img2.jpg" height="100px" width="100px">
+        <img src="/assets/img3.jpg" alt="Flowers" style="width:auto;" height="100px" width="100px">
+    </picture>
+    <hr>
+    <!--Map Demo-->
+    <img src="assets/WEBUI TEAMS.png" alt="css" usemap="#WEB">
+
+    <map name="WEB">
+        <area shape="rect" coords="0,30,830,60" alt="css" href="assets/img2.jpg">
+        <area shape="rect" coords="0,50,830,80" alt="css" href="assets/img3.jpg">
+        <area shape="rect" coords="0,80,830,120" alt="css" href="assets/img4.jpg">
+    </map>
+    <hr>
+    <!--address-->
+    <address>
+        Written by <a href="mailto:abc@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        abc.com<br>
+        123 Layout<br>
+        XYZ
+    </address>
+    <hr>
+    <!--bdo-->
+    <bdo dir="rtl">
+        This text will go right-to-left.
+    </bdo>
+    <hr>
+    <!--blockquote-->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus unde ducimus, sunt quibusdam illum
+        consequatur exercitationem animi quos laborum est quod libero officiis architecto temporibus impedit a. Error,
+        nostrum.
+    </blockquote>
+</body>
+
+</html>
