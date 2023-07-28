@@ -2,9 +2,20 @@
 <html lang="en">
 
 <head>
+     <!-- meta tag starts -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- -->
+   
+    <meta name="keywords" content="HTML Basics, HTML tags, HTML" />
+    <meta name="description" content="Learning about Basics of HTML" />
+    <meta name="revised about" content="WEB-UI" />
+    <meta name="description" content="Including all the concepts to design Web UI" />
+    <!-- <meta http-equiv="refresh" content="8" /> -->
+    <meta name="author" content="Thangam Arulseeli" />
+    <!-- meta tag ends -->
+
     <!--Base-->
     <!-- <base href="https://www.cgvakindia.com/" target="_blank"> -->
     <title>BASIC HTML TAGS</title>
@@ -18,31 +29,47 @@
     <!--H1 TO H6-->
     <h1>h1 tag</h1>
     <h6>h6 tag</h6>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Expedita quaerat iusto, recusandae eaque id eveniet reprehenderit 
+     veritatis incidunt blanditiis. 
+    Rerum minus quam cupiditate cumque nulla minima facere quidem? 
+    Corrupti, tenetur.
     <!--Paragraph-->
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero modi beatae rem, ea totam quam culpa sit sequi
+    <p align="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero modi beatae rem, ea totam quam culpa sit sequi
         <br> porro ducimus dignissimos in facilis perspiciatis ab quasi minima harum. Accusantium, voluptates?
     </p>
-    <hr>
+    <hr width="50%" size="3" color="pink" />
+    
+
     <!--Pre tag-->
     <pre>
         <i>Hello   </i>Hi
         How are you?
     </pre>
     <!--Formatting elements-->
-    <p><b>Bold</b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facilis expedita aliquam tempore
+    <p> <b> Bold </b>
+      <strong> Strong  </strong> 
+      <i> Italic </i> 
+      <em> Italic - Emphasis </em> 
+        <u> sit amet </u> 
+       <font face="arial"  size="5" color="blue"> Lorem ipsum dolor </font> 
+         adipisicing elit. 
+         Voluptatum 
+         facilis expedita aliquam tempore
         blanditiis
         harum, amet, nostrum adipisci ad eveniet cupiditate dolor nobis dicta libero maxime ea soluta consectetur! Nisi!
     </p>
-    <br>
-    <mark>x<sup>2</sup>
-        x<sub>2</sub></mark>
+    <br />
+    <mark>x<sup>4</sup>
+        H<sub>2</sub>O</mark>
     <!--Link-->
     <br>
     <a href="https://www.google.co.in/webhp?source=search_app" target="_blank">Google</a>
     <!--Image tag-->
-    <img src="/assets/IMG1.jpg" alt="HTML" height="100px" width="100px">
+    <img src="/assets/RedRose.jpg" alt="RedRose" height="100px" width="100px">
     <hr>
     <!--Table Demo 1-->
+    <h3> Simple Table Tag - Missing Data </h3>
     <table border="1">
         <caption>Employee Details</caption>
         <thead>
@@ -51,6 +78,8 @@
                 <th>Designation</th>
                 <th>Salary</th>
             </tr>
+        </thead>   
+        <tbody> 
             <tr>
                 <td>John</td>
                 <td>Testing Engineer</td>
@@ -64,7 +93,7 @@
                 <td>Web Designer</td>
                 <td>20000</td>
             </tr>
-        </thead>
+        </tbody>
         <tfoot>
             <tr>
                 <td>Peter</td>
@@ -79,10 +108,11 @@
                 <td>Software Engineer</td>
             </tr>
         </tfoot>
-    </table>
+    </table >
     <hr>
     <!--Table Demo 2-->
-    <table>
+    <h3> Table - Colspan </h3>
+    <table border="2">
         <tr>
             <th>Name</th>
             <th colspan="2">Mobile No.</th>
@@ -104,6 +134,7 @@
     </table>
     <hr>
     <!--Table Demo 3-->
+    <h3> Table - Row Span </h3>
     <table border="1">
         <tr>
             <th>Name</th>
@@ -127,11 +158,12 @@
     <!--Table Demo 4-->
     <h2>Example of Colgroup Tag</h2>
     <table border="1">
-        <colgroup>
+        <colgroup> 
             <col style="background-color: green" width="40">
-            <col span="2" style="background-color:   #ff7256" width="80">
+            <col span="2" style="background-color:#ff7256; color:blue" width="80">
         </colgroup>
         <tr>
+
             <th>Sr.No</th>
             <th>Course</th>
             <th>Duration</th>
@@ -166,7 +198,7 @@
     <!--LIST DEMO-->
     <!--LISTS-->
     <!--ordered,unordered,definition list-->
-    <ol type="i" start="3">
+    <ol type="1" start="3">
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
@@ -179,10 +211,10 @@
     </ul>
     <ol>
         <ul>
-            <li><a href="assets/IMG1.jpg">HTML</a></li>
+            <li><a href="assets/Nature1.jpg">HTML</a></li>
         </ul>
         <ul>
-            <li><a href="assets/img2.jpg">CSS</a></li>
+            <li><a href="assets/Nature3.jpg">CSS</a></li>
         </ul>
     </ol>
     <dl>
@@ -195,14 +227,26 @@
     </dl>
     <!--Audio tag-->
     <hr>
-    <audio controls autoplay muted>
-        <source src="assets/SampleAudio.mp3" type="audio/mp3">
+    <audio controls autoplay muted loop>  <!-- mp3/ogg/wav - Formats supported by html 5-->
+        <source src="assets/Audio1.mp3" type="audio/mp3">
     </audio>
+    <!-- Multiple audio starts here - Browser unable to play 1st goto next audio.... -->
+    <!-- <audio controls autoplay muted>
+         <source src="assets/Audio1.ogg" type="audio/ogg">
+        <source src="assets/Audio1.mp3" type="audio/mp3">
+        <source src="assets/Audio1.opus" type="audio/ogg">
+    </audio> -->
+    <!-- audio tag ends here -->
+
+    <!-- audio with embed code starts here - old method , needs plugins/MIDI -->
+     <embed src="assets/Audio1.mp3" width="200" height="50"
+                     autoplay="true" loop="true">
+    <!-- embed code ends here -->
     <br>
     <hr>
     <!--video tag-->
-    <video width="400px" controls poster="assets/IMG1.jpg">
-        <source src="assets/SampleVideo.mp4" type="video/mp4">
+    <video width="400px" controls poster="assets/Nature8.jpg">
+        <source src="assets/AVideo1.mp4" type="video/mp4">
     </video>
     <hr>
     <!--iframes-->
@@ -216,52 +260,95 @@
     <a href="https://www.google.com/webhp?igu=1" target="google" title="Google Search engine">Google</a>
     <br>
     <iframe width="609" height="342" src="https://www.youtube.com/embed/Kq2FCNTQmSI"
-        title="Pasta Song | CoComelon Nursery Rhymes & Kids Songs" frameborder="0"
+        title="Pasta Song | CoComelon Nursery Rhymes & Kids Songs" frameborder="2
+        "
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     <hr>
     <!--figure and figcaption Demo-->
     <figure>
-        <img src="/assets/IMG1.jpg" alt="HTML" style="width:20%">
-        <figcaption>Fig.1 - HTML.</figcaption>
+        <img src="/assets/YellowRose.jpg" alt="YellowRose" style="width:20%">
+        <figcaption>Fig.1 - My Flower</figcaption>
     </figure>
     <hr>
-    <!--Picture element-->
+    <!--Picture element  -- Resize the window and see the effect -->
     <picture>
-        <source media="(min-width:650px)" srcset="/assets/IMG1.jpg" height="100px" width="100px">
-        <source media="(min-width:465px)" srcset="/assets/img2.jpg" height="100px" width="100px">
-        <img src="/assets/img3.jpg" alt="Flowers" style="width:auto;" height="100px" width="100px">
+        <source media="(min-width:650px)" srcset="/assets/Nature8.jpg" height="100px" width="100px">
+        <source media="(min-width:460px)" srcset="/assets/YellowRose.jpg" height="100px" width="100px">
+        <img src="/assets/RedRose.jpg" alt="Red Rose" height="100px" width="100px style="width:auto;" >
     </picture>
     <hr>
     <!--Map Demo-->
-    <img src="assets/WEBUI TEAMS.png" alt="css" usemap="#WEB">
+    <img src="assets/Nature1.jpg" alt="IMAGE" usemap="#WEB">
 
     <map name="WEB">
-        <area shape="rect" coords="0,30,830,60" alt="css" href="assets/img2.jpg">
-        <area shape="rect" coords="0,50,830,80" alt="css" href="assets/img3.jpg">
-        <area shape="rect" coords="0,80,830,120" alt="css" href="assets/img4.jpg">
+        <area shape="rect" coords="0,0,100,100" alt="Flower" href="assets/Flower1.jpg" target="_blank">
+        <area shape="rect" coords="200,200,400,400" alt="Nature" href="assets/Nature6.jpg" target="_blank">
+        <area shape="rect" coords="400,400,800,800" alt="Trees" href="assets/Nature7.jpg" target="_blank">
     </map>
     <hr>
-    <!--address-->
-    <address>
-        Written by <a href="mailto:abc@example.com">Jon Doe</a>.<br>
+    <hr>
+    <!--bdo-->
+    <!--
+        bdo {
+        unicode-bidi: bidi-override;
+    }
+    -->
+    <bdo dir="rtl">  <!-- dir="rtl/ltr"-->
+        BDO stands for Bi-Directional Override.
+        The <bdo> tag is used to override the current text direction.
+       This text will go right-to-left.
+    </bdo>
+    <hr>
+    <!--blockquote-->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        
+        The <blockquote> tag specifies a section that is quoted from another source.
+        The <q> tag defines a short quotation.
+        Most browsers display quote with  the following 
+            q {
+                color: gray;
+                font-style: italic;
+              }
+        <q cite="http://www.worldwildlife.org/who/index.html">
+            hbjcjhcjhdcjhch </q>     
+        Use <blockquote> for long quotations. 
+        Browsers normally insert quotation marks around the quotation.                
+        Browsers usually indent <blockquote> elements (look at example below to see how to remove the indentation).
+          <!-- blockquote {
+             margin-left: 0;
+            }-->
+            blockquote {
+                margin-left: 0;
+              }  
+              
+            Most browsers display blockquote with  the following indent
+            blockquote {
+                display: block;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                margin-left: 40px;
+                margin-right: 40px;
+              }
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus unde ducimus, sunt quibusdam illum
+        consequatur exercitationem animi quos laborum est quod libero officiis architecto temporibus impedit a. Error,
+        nostrum.
+    </blockquote>
+    <hr>
+
+    <!--Footer --- address -- Contains contact details, map, author, mail id , copy right etc -->
+    <footer>
+          <address>
+        Written by <a href="mailto:abc@example.com">Thangam Arulseeli</a>.<br>
         Visit us at:<br>
         abc.com<br>
         123 Layout<br>
         XYZ
     </address>
-    <hr>
-    <!--bdo-->
-    <bdo dir="rtl">
-        This text will go right-to-left.
-    </bdo>
-    <hr>
-    <!--blockquote-->
-    <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus unde ducimus, sunt quibusdam illum
-        consequatur exercitationem animi quos laborum est quod libero officiis architecto temporibus impedit a. Error,
-        nostrum.
-    </blockquote>
+</footer>
+
+    
 </body>
 
 </html>

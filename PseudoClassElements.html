@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Elements</title>
+    <style>
+        /* PSEUDO CLASS */
+        h6 {
+            display: none;
+            background-color: rgb(234, 234, 130);
+            padding: 20px;
+        }
+
+        div:hover h6 {
+            display: block;
+        }
+
+        p:first-child {
+            color: rgb(255, 0, 191);
+        }
+
+        pre i:first-child {
+            color: rgb(255, 255, 0);
+        }
+
+        /*italic*/
+
+        input:focus {
+            border: 5px solid lightblue;
+            box-shadow: 10px 10px 10px black;
+            color: blue;
+            width: 300px;
+        }
+
+        /* lang */
+        p:lang(fr) {
+            background: #1c87c9;
+            color: #eee;
+        }
+
+        p:lang(es) {
+            background: #5613f3;
+
+        }
+
+        /* LINKS */
+        /* unvisited link */
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        /* visited link */
+        a:visited {
+            color: rgb(5, 102, 55);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: rgb(249, 9, 225);
+            text-decoration: underline;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+            background-color: lightgreen;
+        }
+
+        /* PSEUDO ELEMENT */
+        /*first line of p tag*/
+        p::first-line {
+            color: red;
+            font-variant: small-caps;
+        }
+
+        /*first letter of p tag*/
+        p::first-letter {
+            color: green;
+            font-size: xx-large;
+        }
+
+        /*before the h1 tag*/
+        h1::before {
+            content: url("assets/Smiley2.jpg");
+        }
+
+        h1::after {
+            content: url("assets/Smiley2.jpg");
+        }
+
+        /*for a list*/
+        ::marker {
+            color: rgb(230, 48, 163);
+            font-size: 15px;
+        }
+
+        /*use to highlight text*/
+        ::selection {
+            color: rgb(217, 61, 8);
+            background: rgb(240, 240, 192);
+        }
+    
+
+    
+    
+        .try h3:first-child {
+          color: rgb(26, 184, 40);
+        }
+        .try h3:last-child {
+          color: red;
+        }
+        .try h3:nth-child(2) {
+          color: blue;
+        }
+      </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">PSEUDO CLASS AND ELEMENTS</h1>
+    <!-- PSEUDO CLASS -->
+    <pre>
+        What are Pseudo-classes?
+            A pseudo-class is used to define a special state of an element.
+
+        For example, it can be used to:
+
+            Style an element when a user mouses over it
+            Style visited and unvisited links differently
+            Style an element when it gets focus
+
+            Syntax
+            The syntax of pseudo-class:
+            
+            selector::pseudo-class {
+              property: value;
+            }
+
+        CSS pseudo-element is used to style specified parts of an element.
+
+        For example, it can be used to:
+            
+            Style the first letter, or line, of an element
+            Insert content before, or after, the content of an element
+
+            Syntax
+            The syntax of pseudo-elements:
+            
+            selector::pseudo-element {
+              property: value;
+            }
+    </pre>
+
+    <p>FIRST para child... Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eveniet sed veritatis delectus,
+        porro soluta sapiente quisquam eaque ea omnis magnam, eum accusamus odit sint fugit totam? Fuga, incidunt ut!
+    </p>
+    <p>SECOND para child</p>
+    <p>THIRD para child</p>
+
+    <div>Hover over me to show the h6 element
+        <h6>Hello Trainees!!!!HRU</h6>
+    </div>
+
+    <p lang="fr">I am from France.</p>
+    <p lang="fr">Je m'appelle Ann</p>
+    <br>
+    <p lang="es">I am from Spain.</p>
+    <p lang="es">Hola...</p>
+
+    <pre>I am a <i>strong</i> person. I am a <i>strong</i> person.</pre>
+    <pre>I am a <i>strong</i> person. I am a <i>strong</i> person.</pre>
+
+    <h4>Name: <input type="text" value="Enter your name"></h4>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+    </ol>
+
+    <a href="https://www.cgvakindia.com/" target="_blank">www.cgvakindia.com</a>
+ <br>
+ <a href="https://www.W3C/" target="_blank">www.cgvakindia.com</a>
+    <div class="try">
+        <h3>Hi</h3>
+        <h3>Buddy</h3>
+        <h3>How are you doing?</h3>
+        <h3> Stay safe!!! </h3>
+        <h3> Good luck !!!!!! </h3>
+      </div>
+
+</body>
+
+</html>

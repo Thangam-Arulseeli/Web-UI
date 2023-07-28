@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorations</title>
+    <style>
+        /* IMAGE REFLECTION */
+        img {
+            -webkit-box-reflect: below 3px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(10, 45, 0, 0.4));
+            /* -webkit-box-reflect: below 3px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(10, 45, 0, 0.4)); */
+            /* -webkit-box-reflect: right 3px linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(10, 45, 0, 0.4)); */
+            margin-bottom: 150px;
+
+        }
+
+        /* BOX SHADOW */
+        p {
+            text-shadow: 1px 1px 1px #000, 3px 3px 5px blue, 3px 3px 9px green;
+            font-size: x-large;
+        }
+
+        h1 {
+            text-shadow: 6px 6px 6px red, 10px 10px 3px rgb(23, 55, 234);
+            color: rgb(32, 29, 228);
+        }
+
+        h2 {
+            color: white;
+            text-shadow: 3px 3px 2px black, 3px 10px 1px rgb(85, 200, 85), 4px 14px 2px rgb(199, 61, 61);
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            color: red;
+            background-color: rgb(243, 243, 213);
+            box-shadow: 10px 10px 10px rgb(38, 51, 242), 15px 15px 15px darkblue;
+            border-radius: 15px;
+        }
+
+         .shadow {
+            box-shadow: 10px 10px 10px green, 15px 15px 5px darkblue;
+            border-radius: 15px;
+        }
+    </style> 
+</head>
+
+<body>
+    <!--IMAGE REFLECTION-->
+    <img src="assets/Nature3.jpg" alt="css" height="200px" width="400px">
+    <hr>
+    <!--BOX SHADOW-->
+    <h1>Text-shadow effect!</h1>
+    <h2>Double Text-shadow effect!</h2>
+
+    <h1>The box-shadow Property</h1>
+
+    <div>This is a div element with a box-shadow</div>
+
+    <p>Hello double effect</p>
+
+    <img src="assets/Nature1.jpg" alt="css" height="200px" width="400px" class="shadow">
+
+</body>
+
+</html>

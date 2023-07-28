@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON-->
+    <link rel="icon" href="/assets/favicon.png">
+    <!--BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap Classes</title>
+    <style>
+        /* Customised Fontawesome */
+        .fa-facebook:hover {
+            color: blue;
+            font-size: 24px;
+        }
+
+        /* Transition & Transformation */
+
+        .img1 {
+            width: 100px;
+            height: 100px;
+            margin-left: 500px;
+            margin-top: 50px;
+            transition: width 1s, height 1s, transform 1s;
+        }
+
+        .img1:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+        }
+
+        .img2 {
+            transition: width 3s;
+            transition-timing-function: linear;
+        }
+
+        .img2:hover {
+            width: 300px;
+        }
+
+        /* Animation */
+        .car {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    
+        .invalid-feedback{
+            color: rgb(51, 20, 255);
+            background-color: cyan;
+        }
+
+        @keyframes example {
+            0% {
+                left: 0px;
+            }
+
+            10% {
+                left: 50px;
+            }
+
+            20% {
+                left: 150px;
+            }
+
+            25% {
+                left: 200px;
+            }
+
+            30% {
+                left: 250px;
+            }
+
+            40% {
+                left: 300px;
+            }
+
+            50% {
+                left: 350px;
+            }
+
+            60% {
+                left: 600px;
+            }
+
+            70% {
+                left: 650px;
+            }
+
+            85% {
+                left: 750px;
+            }
+
+            100% {
+                left: 1000px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--TRANSITION-->
+    <img class="img1" src="/assets/RedRose.jpg" alt="HTML" height="100px" width="100px">
+    <hr>
+    <img class="img2" src="/assets/YellowRose.jpg" alt="CSS" height="100px" width="100px">
+    <hr>
+    <!--Animation-->
+    <img class="car" src="/assets/Car1.webp" alt="CAR" height="100px" width="100px">
+    <hr>
+    <!--Payment Integration - RazorPay-->
+    <!-- <form>
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IsJxk2z4EDHFKC"
+            async> </script>
+    </form> -->
+    <br>
+    <!--Gutters are the gaps between column content-->
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-6">
+                <!--p-5 padding-->
+                <div class="p-5 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+                <div class="p-5 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+                <div class="p-5 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+                <div class="p-5 border bg-light">Custom column padding</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Floating labels-->
+    <div class="form-floating mb-3" style="margin-left: 200px;margin-right: 200px;">
+        <input type="email" class="form-control is-invalid" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating" style="margin-left: 200px;margin-right: 200px;">
+        <input type="password" class="form-control is-invalid" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <hr>
+    <!--Validation Classes-->
+    <form action="Bootstrap.html" class="was-validated" style="margin-left: 200px;margin-right: 200px;">
+        <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Enter your name</div>
+        </div>
+        <div class="mb-3 position-relative">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-tooltip">Valid.</div>
+            <div class="invalid-tooltip">Enter your password</div>
+        </div>
+        <div class="form-check mb-3 mt-5">
+            <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+            <label class="form-check-label" for="myCheck">I agree....</label>
+            <div class="valid-tooltip">Valid.</div>
+            <div class="invalid-tooltip">Check this checkbox to continue.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LIz7JWgjAJEboe"
+                async> </script>
+        </form>
+        <a href="https://rzp.io/i/VjEr1uqmPY">Pay now</a>
+    </form> -->
+    <hr>
+    <!--Font awesome-->
+    <ul class="fa-ul" style="margin-left: 200px;">
+        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>List icons</li>
+        <li><i class="fa-li fa fa-square"></i>List icons</li>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+    </ul>
+    <hr>    
+</body>
+</html>

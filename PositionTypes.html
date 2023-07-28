@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION TYPES</title>
+    <style>
+        /* POSITION STATIC */
+        div.static {
+            margin: 50px;
+            position: static;
+            left: 120px;
+            border: 3px solid red;
+        }
+
+        /* POSITION RELATIVE AND ABSOLUTE */
+        .container {
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .center {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            text-align: left;
+            font-size: 25px;
+        }
+
+        img.two {
+            width: 100%;
+            /* height: auto; */
+            opacity: 0.6;
+        }
+
+        /* POSITION STICKY */
+        div.sticky {
+            position: sticky;
+            top: 10px;
+            padding: 5px;
+            background-color: rgb(138, 134, 128);
+            border: 2px solid pink;
+            width: 200px;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Position Static-->
+    <div class="static">Position Static</div>
+
+    <!--Position Fixed-->
+    <h1 style="position: fixed;margin-left: 800px;">Position FIXED</h1>
+    <h2 style="margin-top: 50px;">Image Text</h2>
+    <p>Center text in image:</p>
+
+    <!--z-index-->
+    <img src="/assets/Nature1.jpg" alt="Nature" width="200px" height="100px"
+        style="z-index: -1;position:absolute ;margin-bottom: 150px;">
+        <p style ="width:200px; height:100px; border:3px solid green; color:brown;" >
+            Because the image has a z-index of -1, it will be placed behind the heading.</p>
+
+    <!--Position Sticky-->
+    <div class="sticky">Position Sticky</div>
+
+    <!--Position Relative and Absolute-->
+    <div class="container">
+        <img class="two" src="/assets/Nature3.jpg" alt="Nature" width="800px" height="800px">
+        <div class="center">
+            <h1 style="text-align: center;">Registration Form</h1>
+            <form action="">
+                <fieldset style="margin-left: 400px;margin-right: 300px;text-align: center;">
+                    <legend>
+                        Trainee Details
+                    </legend>
+                    <div>
+                        <label>UserName</label><br>
+                        <input type="text" name="uname" required><br>
+                        <label>User Email</label><br>
+                        <input type="email" name="email" required><br>
+                        <label>User Password</label><br>
+                        <input type="password" name="password" required><br>
+                        <label>Gender</label><br>
+                        <input type="radio" id="gender" name="gender" value="Female">Female<br>
+                        <input type="radio" id="gender" name="gender" value="Male">Male<br>
+                        <label>Address</label><br>
+                        <textarea></textarea><br>
+                        <label>Select Course</label><br>
+                        <select name="course">
+                            <option value="" disabled selected hidden>Choose your Course</option>
+                            <optgroup label="WEBUI">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                            </optgroup>
+                            <optgroup label="DATABASE">
+                                <option>SQL</option>
+                                <option>ORACLE</option>
+                            </optgroup>
+                        </select><br><br>
+                        <br>
+                        <input type="submit" value="Register">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <img src="/assets/Nature1.jpg" alt="css" width="500px" height="500px" 
+              style="z-index: -1;position:absolute ;margin-bottom: 150px;">   
+    <div style="position:relative;border-color: black;border-style: double;margin-left: 100px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore sapiente vel praesentium dicta
+        tempora error explicabo recusandae reiciendis. Quaerat voluptates eius assumenda autem ex natus corporis saepe
+        illo vero?
+        <p style="position:absolute;border-color: black;border-style: double;margin-left: 100px;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quo tenetur praesentium aut eligendi
+            eveniet similique totam corrupti accusantium, quaerat ea pariatur aliquid eius modi ipsum magnam dicta,
+            harum aperiam.
+        </p>
+    </div>
+</body>
+
+</html>

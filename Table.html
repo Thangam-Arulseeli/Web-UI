@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TABLE</title>
+    <style>
+        /* https://uigradients.com/ */
+        body {
+            background: #12c2e9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9,#a1674a);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9 , #a1674a);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            /* background-image: radial-gradient(pink, white, purple); */
+            /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)) */
+        }
+
+        /* TEXT,FONT,CSS FOR TABLE */
+        caption {
+            color: blueviolet;
+            font-size: large;
+            text-transform: uppercase;
+            text-decoration: double;
+            text-decoration-line: underline;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        caption:hover{
+            color: aquamarine;
+            font-size: 28px;
+        }
+
+        table {
+            /* border-collapse: collapse; */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th {
+
+            padding: 10px;
+            height: 20px;
+            text-align: left;
+            font-size: 20px;
+            color: blue;
+            background-color: rgb(176, 186, 176);
+
+        }
+
+        td {
+            padding: 10px;
+            height: 20px;
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+
+        tr:nth-child(even) {
+            background-color: pink;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(208, 245, 245);
+        }
+
+        tr:nth-child(even):hover {
+            background-color: rgb(243, 101, 101);
+        }
+
+        tr:nth-child(odd):hover {
+            background-color: rgb(75, 142, 242);
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Testing Engineer</td>
+            </tr>
+            <tr>
+                <td>Rita</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Web Designer</td>
+                <td>20000</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Peter</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Jancy</td>
+                <td>Web Designer</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Software Engineer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
